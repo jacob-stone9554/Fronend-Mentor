@@ -61,8 +61,8 @@ body {
 }
 
 .qr-img img {
-    max-width: 50%;
-    max-height: 50%;
+    max-width: 90%;
+    max-height: 90%;
     align-items: center;
     border-radius: 15px;
 }
@@ -70,4 +70,8 @@ body {
 .qr-text {
     padding: 10px;
     text-align: center;
+}
+
+.qr-text p {
+    color: hsl(220, 15%, 55%);
 }
