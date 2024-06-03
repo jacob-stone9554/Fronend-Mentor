@@ -35,6 +35,7 @@ body {
     color: hsl(228, 45%, 44%);
 }
 
+/*parent flex container that will hold the image and the text*/
 .qr-container {
     height: 50%;
     width: 20%;
@@ -53,6 +54,7 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/*image container*/
 .qr-img {
     flex: 1;
     display: flex;
@@ -67,6 +69,7 @@ body {
     border-radius: 15px;
 }
 
+/*text container*/
 .qr-text {
     padding: 10px;
     text-align: center;
@@ -75,3 +78,20 @@ body {
 .qr-text p {
     color: hsl(220, 15%, 55%);
 }
+
+/*for viewports 375px or less*/
+@media (max-width: 375px) {
+    .qr-container {
+        width: 90%;
+    }
+}
+
+/*for viewports up to 1440px*/
+@media (min-width: 376px) and (max-width: 1440px) {
+    .qr-container {
+        width: 20%;
+        max-width: none;
+        min-width: 320px;
+    }
+}
+
