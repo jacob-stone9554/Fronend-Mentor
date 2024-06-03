@@ -83,6 +83,7 @@ body {
 @media (max-width: 375px) {
     .qr-container {
         width: 90%;
+        height: 75%;
     }
 }
 
